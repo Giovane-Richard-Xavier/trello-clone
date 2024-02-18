@@ -1,11 +1,11 @@
 import React from "react";
 import { Navbar } from "./_components/navbar";
 
-export const DashboardLayout = ({
-  children,
-}: {
+type TDashboardLayout = {
   children: React.ReactNode;
-}) => {
+};
+
+const DashboardLayout = ({ children }: TDashboardLayout) => {
   return (
     <div className="h-full">
       <Navbar />
